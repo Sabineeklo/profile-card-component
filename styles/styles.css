@@ -1,1 +1,34 @@
-/*# sourceMappingURL=styles.css.map */
+body {
+  background-color: aquamarine;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .container {
+  background-color: #fff;
+  width: 400px;
+  height: 650px;
+  border-radius: 10px;
+}
+body .container .img-container {
+  background-image: url("../images/bg-pattern-card.svg");
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+body .container .img-container img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 150px;
+}
+body .container .profile-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}/*# sourceMappingURL=styles.css.map */
