@@ -1,33 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 body {
-  background: #19a1ae;
-  width: 1440px;
+  background-color: #19a1ae;
+  background-image: url("/images/bg-pattern-top.svg"), url("/images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: -200px -510px, 750px 400px;
   height: 100vh;
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
-  position: relative;
-}
-body .top-img {
-  position: absolute;
-  right: 50%;
-}
-body .bottom-img {
-  position: absolute;
-  top: 120%;
-  right: -25%;
-  width: 80%;
 }
 body .container {
   background-color: #fff;
   width: 350px;
   height: 374px;
   border-radius: 15px;
-  position: absolute;
-  top: 100%;
-  right: 50%;
-  left: 50%;
 }
 body .container .img-container {
   background-image: url("../images/bg-pattern-card.svg");
@@ -75,4 +67,14 @@ body .container .profile-details {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-position: -160px -180px, 220px 420px;
+    background-size: 100%;
+  }
+  body .container {
+    width: 326px;
+  }
 }/*# sourceMappingURL=styles.css.map */
